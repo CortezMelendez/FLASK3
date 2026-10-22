@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>MAC</th>
+            <th>Nombre</th>
+            <th>Protocolos</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mac in elementos %}
+        <tr>
+            <td>{{ mac }}</td>
+            <td>{{ elementos[mac].name }}</td>
+            <td>{{ elementos[mac].protocolos }}</td>
+            <td>{{ elementos[mac].status }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+<div>
+    <h1>Información Personal</h1>
+    <p><strong>Nombre:</strong> {{ personal_info.name }}</p>
+    <p><strong>Edad:</strong> {{ personal_info.age }}</p>
+    <p><strong>Estado:</strong> {{ personal_info.active }}</p>
+</div>
+
+{% if personal_info.active == True %}
+    <p>Información disponible.</p>
+    <p>{{variable1 | safe}}</p>
+{% else %}
+    {% include 'formulario.html' %}
+{% endif %}

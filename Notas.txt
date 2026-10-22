@@ -1,0 +1,38 @@
+En el examen lo primero sera:
+Crear todas las librerias necesarias
+
+1.- Verificar versión de python (MAC-> python3 -- version)
+2.- Creamos la carpeta venv con (python3 -m venv venv)
+3.- para WIndows: . venv/Scripts/activate
+        para mac: . venv/bin/activate  
+        "Con espacio después del punto"
+        Si no estamos autorizados y arroja error ponemos: 
+            Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+            Si hay error en MAC poner lo siguiente : 
+                Si estás ejecutando un script de PowerShell (.ps1):
+                No necesitas cambiar ninguna política. Simplemente asegúrate de que tu terminal en VS Code sea de PowerShell (pwsh) y ejecuta el script directamente anteponiendo pwsh:
+                pwsh tu_script.ps1
+
+4.-Creamos una nueva carpeta y la llamamos templete fuera de venv , dentro de templates
+    van a ir todos los HTML
+5.-Creamos un archivo HTML d enombre formulario
+6.-Creamos un archivo .py en la raiz app.py
+7.-instalamos FLASK :
+        pip install flask
+8.-""Revisar los métodos por que puede haber trampa en el examen""
+    Los verbos son.
+    PATCH
+    GET
+    PUT
+    POST
+    DELETE
+9.-Vamos a crear el archivo de response y copiamos hasta el titulo cerramos con el head, body y html
+10.-Ahora copiamos toda la linea de app.py de mensaje y se coloca en el body
+11.- Desde app.py definimos la nueva ruta en el action aparece la ruta / y ocupamos la ruta send en el formulario.html
+    cambiando linea 25
+12.-Copiamos lo siguiente ruta arriba en app.py, se esta habilitando la nueva ruta
+    @app.route('/', methods=['GET', 'POST'])
+    def manejar_formulario():
+
+    

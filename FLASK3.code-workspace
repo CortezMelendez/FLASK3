@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../FLASK2"
+		},
+		{
+			"path": "../FLASK"
+		}
+	],
+	"settings": {}
+}
